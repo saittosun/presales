@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Project Name</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">Due</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let customer of customers">
+        <tr *ngFor="let project of customer.projects">
+          <td>{{project.name}}</td>
+          <td>{{customer.name}}</td>
+          <td>{{project.status}}</td>
+          <td>{{project.date}}</td>
+          <td></td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+
+  <!-- {{customers | json}} -->
+</div>
