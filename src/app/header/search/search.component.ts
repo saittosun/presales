@@ -11,33 +11,30 @@ import {map, startWith} from 'rxjs/operators';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
-export class SearchComponent implements OnInit, OnDestroy {
-  filteredStatus = '';
-
-  customers: Customer[] = [];
-  customersSub: Subscription;
+export class SearchComponent implements OnInit {
+  filteredStatus: string = '';
 
   constructor(private apiService: ApiService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
 
-    this.customersSub = this.apiService.customersSub.subscribe(response => {
-      this.customers = response;
-    })
-  }
 
-  filterChange() {
-    console.log(this.filteredStatus);
+  filterChange(event: string) {
+    console.log(event);
     let customers = new Api().customers;
+    console.log(customers)
+
+    if(event === null || event === '') {
+      this.apiService.updateCustomer(customers);
+      return;
+    }
     customers = customers.filter(customer => {
-      customer.name.toLowerCase().startsWith(this.filteredStatus.toLowerCase())
+      return customer.customerName.toLowerCase().includes(event.toLowerCase()) || customer.projectName.toLowerCase().includes(event.toLowerCase())
     })
+
     this.apiService.updateCustomer(customers);
   }
 
-  ngOnDestroy(): void {
-    this.customersSub.unsubscribe();
-  }
 
 
 

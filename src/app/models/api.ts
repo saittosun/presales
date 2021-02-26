@@ -9,57 +9,73 @@ export class Api {
   private _customers: Customer[] = [
     {
       id: 1,
-      name: 'Antwerpen',
-      projects: [
-        {
-          id: 11,
-          name: 'Nova',
-          status: 'Won',
-          date: '26/02/2021'
-        }
-      ]
+      customerName: 'Antwerpen',
+      projectName: 'Nova',
+      status: 'offer',
+      date: 'end of june'
     },
     {
       id: 2,
-      name: 'Studio Hyperdrive',
-      projects: [
-        {
-          id: 21,
-          name: 'Presales',
-          status: 'Offer',
-          date: 'End of September'
-        },
-        {
-          id: 22,
-          name: 'Lead-followup',
-          status: 'Pitch',
-          date: '20/05/2021'
-        }
-      ]
+      customerName: 'Brussel',
+      projectName: 'Digipolis',
+      status: 'pitch',
+      date: 'end of february'
     },
     {
       id: 3,
-      name: 'Renson',
-      projects: [
-        {
-          id: 31,
-          name: 'Presales',
-          status: 'Offer',
-          date: 'End of September'
-        },
-        {
-          id: 32,
-          name: 'Lead-followup',
-          status: 'Pitch',
-          date: '20/05/2021'
-        },
-        {
-          id: 33,
-          name: 'Digipolis',
-          status: 'pitch',
-          date: '20/05/2021'
-        }
-      ]
-    }
+      customerName: 'Gent',
+      projectName: 'Nova',
+      status: 'Bafo',
+      date: 'end of march'
+    },
+    {
+      id: 4,
+      customerName: 'Studio',
+      projectName: 'presales',
+      status: 'offer',
+      date: 'end of april'
+    },
+    {
+      id: 5,
+      customerName: 'Cronos',
+      projectName: 'Nova',
+      status: 'offer',
+      date: 'end of may'
+    },
+    {
+      id: 6,
+      customerName: 'Catcoon',
+      projectName: 'renson',
+      status: 'pitch',
+      date: 'end of april'
+    },
+    {
+      id: 7,
+      customerName: 'Engie',
+      projectName: 'polis',
+      status: 'pitch',
+      date: 'end of march'
+    },
+    {
+      id: 8,
+      customerName: 'ahovoks',
+      projectName: 'search',
+      status: 'Bafo',
+      date: 'end of may'
+    },
+    {
+      id: 9,
+      customerName: 'ecom',
+      projectName: 'firstfloor',
+      status: 'offer',
+      date: 'end of april'
+    },
+    {
+      id: 10,
+      customerName: 'eucobat',
+      projectName: 'boulevart',
+      status: 'bafo',
+      date: 'end of february'
+    },
   ];
 }

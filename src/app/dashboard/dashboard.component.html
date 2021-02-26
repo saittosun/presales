@@ -10,15 +10,15 @@
       </tr>
     </thead>
     <tbody>
-      <ng-container *ngFor="let customer of customers">
-        <tr *ngFor="let project of customer.projects">
-          <td>{{project.name}}</td>
-          <td>{{customer.name}}</td>
-          <td>{{project.status}}</td>
-          <td>{{project.date}}</td>
+
+        <tr *ngFor="let customer of customers">
+          <td>{{customer.projectName}}</td>
+          <td>{{customer.customerName}}</td>
+          <td>{{customer.status}}</td>
+          <td>{{customer.date}}</td>
           <td></td>
         </tr>
-      </ng-container>
+
     </tbody>
   </table>
 
