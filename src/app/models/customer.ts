@@ -1,5 +1,3 @@
-import { Project } from "./project";
-
 export interface Customer {
   id: number,
   customerName: string,

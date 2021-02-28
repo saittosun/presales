@@ -12,9 +12,9 @@ export class ApiService {
 
   constructor() { }
 
-  get customersOnce() {
-    return this._customersSub.asObservable().pipe(take(1));
-  }
+  // get customersOnce() {
+  //   return this._customersSub.asObservable().pipe(take(1));
+  // }
 
   get customersSub() {
     return this._customersSub.asObservable();

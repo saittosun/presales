@@ -13,7 +13,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { CustomerDetailComponent } from './header/new/customer-detail/customer-detail.component';
 import { LeadDetailComponent } from './header/new/lead-detail/lead-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FilterPipe } from './shared/filter.pipe';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
 
 @NgModule({
   declarations: [
@@ -27,13 +28,13 @@ import { FilterPipe } from './shared/filter.pipe';
     DropdownDirective,
     CustomerDetailComponent,
     LeadDetailComponent,
-    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MatAutocompleteModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
