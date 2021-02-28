@@ -1,4 +1,4 @@
-import { ApiService } from './../api.service';
+import { ApiService } from '../core/services/api.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Customer } from '../models/customer';
 import { Subscription } from 'rxjs';

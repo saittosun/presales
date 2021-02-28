@@ -1,11 +1,11 @@
-import { LeadDetailComponent } from './header/new/lead-detail/lead-detail.component';
+import { LeadDetailComponent } from './leads/lead-detail/lead-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CustomersComponent } from './customers/customers.component';
 import { LeadsComponent } from './leads/leads.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NotFoundComponent } from './header/not-found/not-found.component';
-import { CustomerDetailComponent } from './header/new/customer-detail/customer-detail.component';
+import { NotFoundComponent } from './core/not-found/not-found.component';
+import { CustomerDetailComponent } from './customers/customer-detail/customer-detail.component';
 
 
 const routes: Routes = [

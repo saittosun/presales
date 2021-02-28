@@ -1,5 +1,5 @@
-import { Customer } from './models/customer';
-import { Api } from './models/api';
+import { Customer } from '../../models/customer';
+import { Api } from '../../models/api';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { take } from 'rxjs/operators';
