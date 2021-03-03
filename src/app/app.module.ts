@@ -14,6 +14,9 @@ import { CustomerDetailComponent } from './customers/customer-detail/customer-de
 import { LeadDetailComponent } from './leads/lead-detail/lead-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 @NgModule({
@@ -34,7 +37,9 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    NgxMatSelectSearchModule,
+    MatSelectModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
