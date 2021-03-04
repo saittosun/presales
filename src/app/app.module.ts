@@ -16,6 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 import {MatSelectModule} from '@angular/material/select';
+import { CustomInputComponent } from './shared/custom-input/custom-input.component';
+import { InputRefDirective } from './shared/input-ref.directive';
+import { InputComponent } from './shared/input/input.component';
 
 
 
@@ -31,6 +34,9 @@ import {MatSelectModule} from '@angular/material/select';
     DropdownDirective,
     CustomerDetailComponent,
     LeadDetailComponent,
+    CustomInputComponent,
+    InputRefDirective,
+    InputComponent,
   ],
   imports: [
     BrowserModule,

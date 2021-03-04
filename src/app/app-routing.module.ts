@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'new/customer-detail', component: CustomerDetailComponent},
   { path: 'leads', component: LeadsComponent },
   { path: 'customers', component: CustomersComponent },
+  { path: 'customer-details', component: CustomerDetailComponent},
   { path: '', component: DashboardComponent },
   { path: '**', component: NotFoundComponent}
 ];
